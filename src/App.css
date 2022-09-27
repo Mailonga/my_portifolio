@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&display=swap');
+
+/*Base*/
+
+:root{
+  --color-primary: black;
+  
+  --color-light: rgba(211, 182, 250, 0.938);
+  --color-lilás: rgba(186, 136, 252, 0.938);
+  --color-roxo: rgba(149, 67, 255, 0.938);
+  --color-magenta: rgba(119, 15, 255, 0.938);
+
+  --color-lighter-blue: rgba(182, 240, 250, 0.938);
+  --color-light-blue: rgba(125, 191, 253, 0.938);
+  --color-blue: rgba(79, 170, 255, 0.938);
+  --color-blue-Ocean: rgba(8, 136, 255, 0.938);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  font-family: 'Inter Tight', sans-serif !important;
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  font-family: 'Abyssinica SIL', serif !important;
+  font-weight: 500;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
+p.success {
+	color: green;
+}
+
+p.danger {
+	color: red;
+}
+
+/*Navbar*/
+
+.icon{
+  width: 45px;
+  height: 45px;
 }
